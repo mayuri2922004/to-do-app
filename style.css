@@ -1,0 +1,157 @@
+body{
+  
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('city-night.jpg') no-repeat center center/cover;
+    height: 100vh;
+    font-style: normal;
+}
+
+.container{
+    border: 1px solid rgba(255,255,255,0.3); 
+    background:  rgba(255,255,255,0.1); 
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 32px 0 rgba(173,191,7,0.37);
+}
+h1{
+    color: black;
+    margin-bottom: 20px;
+}
+.input-group{
+    display: flex;
+    margin-bottom: 20px;
+}
+#taskInput{
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    flex: 1;
+    outline: none;
+ 
+}
+#addTaskBtn{
+   
+     padding: 10px 20px;
+     border: none;
+     background:black ;
+     color: white;
+     border-radius: 0 10px 10px 0;
+     font-size: 16px;
+}
+
+#addTaskBtn.hover{
+     
+    background-color: black;
+}
+
+#taskList{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+#taskList li{
+
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color:rgb(4,4,4);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size: 20px;
+    
+    
+}
+
+.delete-btn{
+     /* background:hsl(305, 78%, 36%);
+     border:none;
+     padding: 5px 10px;
+     color: black;
+     border-radius:5px;
+     cursor: pointer; */
+     /* From Uiverse.io by adamgiebl */ 
+
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 3px 1px;
+    border: 3px solid #FF0072;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #FF0072;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .delete-btn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #aa1558;
+    z-index: -1;
+  }
+  
+  .delete-btn:hover, .delete-btn:focus {
+    color: white;
+  }
+  
+  .delete-btn:hover:before, .delete-btn:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .delete-btn:active {
+    transform: scale(0.9);
+  }
+     
+   
+  .task-text.completed {
+    text-decoration: line-through;
+    color: green;
+    padding: 6px 2px;
+}
+
+.task-text.deleted {
+    text-decoration: line-through;
+    color: red;
+}
+
+.complete-btn {
+    margin-right: 5px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.complete-btn:hover {
+    background-color: rgb(100, 0, 70);
+}
